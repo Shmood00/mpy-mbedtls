@@ -153,6 +153,7 @@ git clone https://github.com/Carglglz/mpy-mbedtls.git
 #define MBEDTLS_BASE64_C
 #define MBEDTLS_OID_C
 #define MBEDTLS_ASN1_WRITE_C
+#define MBEDTLS_PEM_PARSE_C
 ```
 
 4. Save the file and navigate to the `ports/unix` folder within the micropython repository.
