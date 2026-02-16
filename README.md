@@ -94,7 +94,7 @@ git clone https://github.com/Carglglz/mpy-mbedtls.git
 6. Move back into the micropyton repo, specifically the `ports/esp32` folder and make a folder for mbedtls: `mkdir mbedtls`
 7. Build the firmware (ensure `cmake` is installed first `sudo apt install cmake -y`):
 ```console
-make BOARD=ESP32_GENERIC USER_C_MODULES=/absolute/path/to/mpy-mbedtls FROZEN_MANIFEST=/absolute/path/to/mpy-mbedtls/ports/esp32/manifest.py -j4
+make BOARD=ESP32_GENERIC USER_C_MODULES=/absolute/path/to/mpy-mbedtls/mbedtls/micropython.cmake FROZEN_MANIFEST=/absolute/path/to/mpy-mbedtls/ports/esp32/manifest.py -j4
 ```
 
 ## Flashing the Firmware
